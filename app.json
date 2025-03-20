@@ -4,11 +4,11 @@
     "slug": "aidwell",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "https://picsum.photos/200",
+    "icon": "./assets/icon.png",
     "scheme": "aidwell",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "https://picsum.photos/1080/1920",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#e1f16b"
     },
@@ -19,7 +19,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "https://picsum.photos/200",
+        "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#e1f16b"
       },
       "package": "com.aidwell.app"
@@ -27,11 +27,19 @@
     "web": {
       "bundler": "metro",
       "output": "single",
-      "favicon": "https://picsum.photos/64"
+      "favicon": "./assets/icon.png"
     },
     "plugins": ["expo-router"],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "5aa441bc-261c-4ebd-9ec0-d21ed7d9f7bc"
+      }
     }
   }
 }
